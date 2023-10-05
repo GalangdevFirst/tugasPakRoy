@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: rgb(63, 60, 66);
+      }
+      h2 {
+        text-align: center;
+      }
+      .Li_Headers {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+      }
+      li {
+        text-decoration: none;
+        list-style-type: none;
+        margin-right: 10px;
+        color: aqua;
+      }
+      li > a {
+        text-decoration: none;
+        color: black;
+      }
+      .image {
+        width: 50%;
+      }
+      .image_screen {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 6px;
+      }
+    </style>
+
+    <h2>Welcome to my website</h2>
+
+    <div class="Li_Headers">
+      <ul>
+        <li><a href="./search.html" id="alert">home</a></li>
+        <li><a href="./Tugas/CV.html">Curiculum Vite</a></li>
+        <li><a href="./Tugas//Galeri.html">Galeri </a></li>
+        <li><a href="./Tugas/login_Form.html">Form Contact</a></li>
+      </ul>
+    </div>
+    <div id="imageShow">
+      <button id="imagesT">Tampilkan Logo Al-khariyah</button>
+    </div>
+    <div class="image_screen">
+      <img
+        src="./Tugas//image.png"
+        alt=""
+        class="image"
+        id="imageShowss"
+        style="display: none"
+      />
+    </div>
+  </body>
+  <script>
+    const Alert = document.getElementById("alert");
+    Alert.addEventListener("click", function (event) {
+      event.preventDefault();
+      alert("kamu berada pada halaman pertama");
+    });
+    const ImageSHows = document.getElementById("imagesT");
+    const ImagesImages = document.getElementById("imageShowss");
+
+    ImageSHows.addEventListener("click", () => {
+      ImagesImages.style.display = "block";
+    });
+  </script>
+</html>
